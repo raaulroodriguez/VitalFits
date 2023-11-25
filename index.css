@@ -15,6 +15,9 @@ body {
     background-color: #F5FFFA;
     color: #000000;
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 li , a, button {
@@ -33,6 +36,8 @@ li , a, button {
 }
 
 .header_princ {
+    position: fixed;
+    z-index: 1000;
     display: flex;
     max-width: auto;
     margin: auto;
@@ -41,6 +46,7 @@ li , a, button {
     color: #44D58A;
     font-size: 15px;
     border: 2px solid #44D58A;
+    width: 100%;
 }
 
 .redes_sociales {
@@ -76,6 +82,14 @@ li , a, button {
     display: flex;
     justify-content: space-around;
     margin: 5px auto;
+}
+
+.activo {
+    background-color: #44D58A;
+}
+
+.activo a {
+    color: #000000;
 }
 
 .header_div li a {
@@ -172,4 +186,60 @@ input {
 
 .lupa:hover {
     background: #44D58A;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer_princ {
+    background-color: #44D58A;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+.footer_princ li a{
+    color: #F5FFFA;
+}
+
+.footer_princ .titulo  {
+    color: #000000;
+}
+.footer_princ li {
+    padding: 3px 3px;
+}
+
+.footer_princ li:hover a {
+    color: #000000;
+}
+
+.redes_sociales_footer {
+    list-style: none;
+}
+
+.redes_sociales_footer li {
+    display: inline-block;
+    padding: 0px 20px;
+    padding-top: 25px;
+}
+
+.inc {
+    list-style: none;
+    padding: 10px;
+    color: #F5FFFA;
+    background-color: #000000
+}
+
+.inc p {
+    padding-top: 2px;
 }
