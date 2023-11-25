@@ -1,18 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
 }
 body {
-    background-color: #FFFFF0;
-    color: #1f1f1f;
-    font-family: Georgia, 'Times New Roman', Times, cursive;
+    background-color: #F5FFFA;
+    color: #000000;
     font-size: 16px;
 }
 
-a {
-    color: #44d58a;
+li , a, button {
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
     text-decoration: none;
 }
 
 .header_top {
+    background-color: #44D58A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.header_princ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.redes_sociales {
+    list-style: none;
+}
+
+.redes_sociales li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.redes_sociales li a{
+    transition: all 0.3s ease 0s;
+    color: #000000;
+    cursor: pointer;
+}
+
+.redes_sociales li a:hover{
+    color: #F5FFFA;
+}
+
+.ig, .tw, .fb{
+    height: 20px;
+}
+.logo {
+    cursor: pointer;
+    height: 100px;
+}
+
+.header_div li{
     display: inline-block;
 }
