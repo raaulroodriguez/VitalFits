@@ -3,7 +3,8 @@
     <head>
     <meta charset="utf-8">
     <title>VitalFits Eats</title>
-    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     </head>
     <body>
     <header>
@@ -26,25 +27,37 @@
             <div class="logo_header">
                 <a href="index.html"><img class="logo" src="img/logo.jfif" alt="logo"></a>
             </div>
+            <div class="buscar">
+                <input type="text" placeholder="Buscar...">
+                <div class="lupa">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
             <div class="header_div">
                 <nav>
                     <ul>
                         <!--FALTA UNA LUPA O BARRA DE BUSQUEDA, HAY QUE MIRAR COMO IMPLEMENTARLO Y SI SERÍA ÚTIL-->
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a>Nutrición</a>
-                            <ul>
-                                <li><a>Crea tu Dieta</a></li>
-                                <li><a>Consulta tu Dieta</a></li>
-                                <li><a>Menu del día</a></li>
-                                <li><a>Ejemplo</a></li>
+                        <li><a href="#">Nutrición</a>
+                            <ul class="nutricion">
+                                <li><a href="#">Crea tu Dieta</a></li>
+                                <li><a href="#">Consulta tu Dieta</a></li>
+                                <li><a href="#">Menu del día</a></li>
+                                <li><a href="#">Ejemplo</a></li>
                             </ul>
                         </li>
-                        <li><a>Sobre Nosotros</a></li>
-                        <li><a>Ayuda</a></l>
-                        <li><a>Contáctanos</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Ayuda</a></l>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cuenta">
+                <nav>
+                    <ul>
                         <!--ESTOS 2 TENDRÍAN UN ESTILO DIFERENTE Y UNA VEZ INICIADA SESIÓN SERÍAN UNO SOLO LLAMADO CUENTA-->
-                        <li><a>Registrarse</a></li>
-                        <li><a>Iniciar Sesión</a></li>
+                        <li><a href="#">Registrarse</a></li>
+                        <li><a href="#">Iniciar Sesión</a></li>
                     </ul>
                 </nav>
             </div>
