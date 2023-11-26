@@ -243,3 +243,7 @@ footer {
 .inc p {
     padding-top: 2px;
 }
+
+.top {
+    top: 0px;
+}
