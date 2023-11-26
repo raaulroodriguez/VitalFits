@@ -126,11 +126,7 @@ li , a, button {
 }
 
 .header_div li:hover .nutricion li:hover a {
-    color: #44D58A;
-}
-
-.header_div li:hover .nutricion li:hover {
-    background-color: #F5FFFA;
+    color: #000000;
 }
 
 .buscar {

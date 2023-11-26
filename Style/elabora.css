@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+/* PALETA DE COLORES 
+    BLANCO #F5FFFA
+    VERDE #44D58A
+    NEGRO #000000
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+body {
+    background-color: #F5FFFA;
+    color: #000000;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+li , a, button {
+    font-weight: 500;
+    font-size: 15px;
+    color: #44D58A;
+    text-decoration: none;
+}
+
+.header_top {
+    background-color: #44D58A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.header_princ {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    max-width: auto;
+    margin: auto;
+    align-items: center;
+    background-color: #F5FFFA;
+    color: #44D58A;
+    font-size: 15px;
+    border: 2px solid #44D58A;
+    width: 100%;
+}
+
+.redes_sociales {
+    list-style: none;
+}
+
+.redes_sociales li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.redes_sociales li a{
+    transition: all 0.3s ease 0s;
+    color: #000000;
+    cursor: pointer;
+}
+
+.redes_sociales li a:hover{
+    color: #F5FFFA;
+}
+
+.ig, .tw, .fb{
+    height: 20px;
+}
+.logo {
+    position: relative;
+    cursor: pointer;
+    height: 80px;
+    left: 80%;
+}
+.header_div{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px auto;
+}
+
+.activo {
+    background-color: #44D58A;
+}
+
+.activo a {
+    color: #000000;
+}
+
+.header_div li a {
+    display: block;
+    padding: 15px 20px;
+}
+.header_div li{
+    display: inline-block;
+}
+.header_div li:hover{
+    background-color: #44D58A;
+}
+.header_div li:hover a{
+    color: #F5FFFA;
+}
+.nutricion {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: #F5FFFA;
+}
+
+.header_div li:hover .nutricion {
+    display: block;
+    background-color: #44D58A;
+}
+.header_div li:hover .nutricion a {
+    color: #F5FFFA;
+}
+
+.nutricion li:hover {
+    background-color: #44D58A;
+}
+
+.header_div li:hover .nutricion li:hover a {
+    color: #000000;
+}
+
+.buscar {
+    position: absolute;
+    left: 10%;
+    padding: 10px;
+}
+
+input {
+    outline: none;
+    box-sizing: border-box;
+    height: 30px;
+    width: 0;
+    padding: 0 18px;
+    border-radius: 50px;
+    font-size: 15px;
+    border: 1px solid #44D58A;
+    transition: all .7s ease;
+}
+
+::placeholder {
+    color: #000000;
+}
+
+.lupa {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: #44D58A;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.lupa i {
+    font-size: 25px;
+    color: #F5FFFA;
+    line-height: 50px;
+    transition: all .7s ease;
+}
+
+.buscar:hover input {
+    width: 350px;
+}
+
+.buscar:hover i {
+    transform: rotate(-360deg);
+}
+
+.lupa:hover {
+    background: #44D58A;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer_princ {
+    background-color: #44D58A;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+.footer_princ li a{
+    color: #F5FFFA;
+}
+
+.footer_princ .titulo  {
+    color: #000000;
+}
+.footer_princ li {
+    padding: 3px 3px;
+}
+
+.footer_princ li:hover a {
+    color: #000000;
+}
+
+.redes_sociales_footer {
+    list-style: none;
+}
+
+.redes_sociales_footer li {
+    display: inline-block;
+    padding: 0px 20px;
+    padding-top: 25px;
+}
+
+.inc {
+    list-style: none;
+    padding: 10px;
+    color: #F5FFFA;
+    background-color: #000000
+}
+
+.inc p {
+    padding-top: 2px;
+}
+
+.top {
+    top: 0px;
+}
