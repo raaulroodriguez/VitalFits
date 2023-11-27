@@ -2,9 +2,10 @@
 
 /* PALETA DE COLORES 
     BLANCO #F5FFFA
-    VERDE #44D58A
+    VERDE PRINCIPAL #44D58A
     NEGRO #000000
     VERDE CLARO #c2fbd7
+    VERDE OSCURO #29be72
 */
 *{
     box-sizing: border-box;
@@ -17,17 +18,17 @@ body {
     background-repeat: round;
     color: #000000;
     font-size: 15px;
-    display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 li , a, button {
-    font-weight: 500;
     font-size: 15px;
     color: #44D58A;
     text-decoration: none;
 }
+
+/* HEADER */
 
 .header_top {
     background-color: #44D58A;
@@ -40,9 +41,7 @@ li , a, button {
 .header_princ {
     position: fixed;
     z-index: 1000;
-    display: flex;
-    max-width: auto;
-    margin: auto;
+    display: inline-flex;
     align-items: center;
     background-color: #F5FFFA;
     color: #44D58A;
@@ -79,12 +78,11 @@ li , a, button {
     height: 80px;
     left: 80%;
 }
-.header_div{
-    list-style: none;
+.menu{
+    margin: 0 0 0 520px;
     display: flex;
+    list-style: none;
     justify-content: space-around;
-    margin: 5px auto;
-    display: inline;
 }
 
 .activo {
@@ -95,21 +93,18 @@ li , a, button {
     color: #000000;
 }
 
-.header_div li a {
+.menu li a {
     display: block;
     padding: 15px 20px;
 }
-.header_div li{
+.menu li{
     display: inline-block;
 }
-.header_div li:hover{
+.menu li:hover{
     background-color: #44D58A;
 }
-.header_div li:hover a{
+.menu li:hover a{
     color: #F5FFFA;
-}
-
-.center {
 }
 
 .nutricion {
@@ -120,11 +115,11 @@ li , a, button {
     background-color: #F5FFFA;
 }
 
-.header_div li:hover .nutricion {
+.menu li:hover .nutricion {
     display: block;
     background-color: #44D58A;
 }
-.header_div li:hover .nutricion a {
+.menu li:hover .nutricion a {
     color: #F5FFFA;
 }
 
@@ -132,17 +127,17 @@ li , a, button {
     background-color: #44D58A;
 }
 
-.header_div li:hover .nutricion li:hover a {
+.menu li:hover .nutricion li:hover a {
     color: #000000;
 }
 
-.buscar {
+.busqueda {
     position: absolute;
     left: 10%;
     padding: 10px;
 }
 
-input {
+.buscar {
     outline: none;
     box-sizing: border-box;
     height: 30px;
@@ -179,11 +174,11 @@ input {
     transition: all .7s ease;
 }
 
-.buscar:hover input {
+.busqueda:hover input {
     width: 280px;
 }
 
-.buscar:hover i {
+.busqueda:hover i {
     transform: rotate(-360deg);
 }
 
@@ -193,14 +188,15 @@ input {
 
 .cuenta {
     position: relative;
+    margin-left: 220px;
 }
 .cuenta li {
     background-color: #c2fbd7;
     border-radius: 100px;
     box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-    color: #44D58A;
+    color: #29be72;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     padding: 7px 20px;
     text-align: center;
     text-decoration: none;
@@ -208,6 +204,7 @@ input {
     border: 0;
     user-select: none;
     touch-action: manipulation;
+    margin-right: 15px;
 }
 
 .cuenta li:hover {
@@ -215,6 +212,22 @@ input {
     transform: scale(1.05) rotate(-1deg);
 }
 
+.cuenta li a {
+    padding-top: 3px;
+}
+
+.fa-solid {
+    width: 25px;
+    padding-right: 5%;
+    padding-top: 2%;
+    color: #29be72;
+}
+
+/* MAIN */
+
+main {
+    margin-top: 100px;
+}
 
 /* FOOTER */
 
