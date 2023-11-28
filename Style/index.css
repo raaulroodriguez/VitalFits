@@ -79,10 +79,10 @@ li , a, button {
     left: 80%;
 }
 .menu{
-    margin: 0 0 0 520px;
+    margin: 0 0 0 400px;
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .activo {
@@ -188,7 +188,7 @@ li , a, button {
 
 .cuenta {
     position: relative;
-    margin-left: 220px;
+    margin-left: 200px;
 }
 .cuenta li {
     background-color: #c2fbd7;
