@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+/* PALETA DE COLORES 
+    BLANCO #F5FFFA
+    VERDE PRINCIPAL #44D58A
+    NEGRO #000000
+    VERDE CLARO #c2fbd7
+    VERDE OSCURO #29be72
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+body {
+    background: url(/img/fondo4_2.png);
+    background-repeat: none;
+    color: #000000;
+    font-size: 15px;
+    min-height: 100vh;
+}
+
+li , a, button {
+    font-size: 15px;
+    color: #44D58A;
+    text-decoration: none;
+}
+
+
+
+/* INICIO HEADER TOP */
+
+.header_top {
+    background-color: #44D58A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px 10%;
+    width: 100%;
+}
+
+/* INICIO REDES SOCIALES */
+
+.header_top .redes_sociales {
+    list-style: none;
+}
+
+.header_top .redes_sociales li {
+    display: inline-flex;
+    padding: 0px 20px;
+}
+
+.header_top .redes_sociales li a{
+    transition: all 0.3s ease 0s;
+    color: #000000;
+    cursor: pointer;
+}
+
+.header_top .redes_sociales li a:hover{
+    color: #F5FFFA;
+}
+
+.header_top .redes_sociales, .ig, .tw, .fb{
+    height: 20px;
+    width: auto;
+}
+
+/* FIN REDES SOCIALES */
+
+/* INICIO SLOGAN */
+
+/* FIN SLOGAN */
+
+/* FIN HEADER TOP */
+
+/* INICIO HEADER */
+
+.header {
+    background-color: #f5fffa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    width: 100%;
+    border: 2px solid #44D58A;
+}
+
+.top {
+    top: 0px;
+}
+
+/* INICIO LOGO */
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+}
+
+/* FIN LOGO */
+
+/* INICIO BARRA DE BÚSQUEDA */
+
+.busqueda {
+    position: absolute;
+    left: 10%;
+    padding: 10px;
+}
+
+.buscar {
+    box-sizing: border-box;
+    height: 30px;
+    width: 0;
+    padding: 0 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    border: 1px solid #44D58A;
+    transition: all .7s ease;
+}
+
+::placeholder {
+    color: #000000;
+}
+
+.lupa {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: #44D58A;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.lupa i {
+    font-size: 25px;
+    color: #F5FFFA;
+    line-height: 50px;
+    transition: all .7s ease;
+}
+
+.busqueda:hover input {
+    width: 280px;
+}
+
+.busqueda:hover i {
+    transform: rotate(-360deg);
+}
+
+.lupa:hover {
+    background: #44D58A;
+}
+
+/* FIN BARRA DE BÚSQUEDA */
+
+/* INICIO MENU PRINCIPAL */
+
+.header .menu .activo {
+    background-color: #44D58A;
+    cursor: pointer;
+}
+
+.header .menu .activo a {
+    color: #000000;
+}
+
+.header .menu .activo:hover {
+    transform: scale(1.1);
+}
+
+.header .menu {
+    list-style: none;
+}
+
+.header .menu li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.header .menu a{
+    font-size: 700;
+    color: #44D58A;
+    text-decoration: none;
+}
+
+.header .menu li:hover a{
+    color: #000000;
+}
+
+.header .menu .nutricion {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: #F5FFFA;
+}
+
+.header .menu li:hover .nutricion {
+    display: block;
+    background-color: #44D58A;
+    margin-top: 10px;
+}
+.header .menu li:hover .nutricion a {
+    color: #F5FFFA;
+}
+
+.header .menu .nutricion li:hover {
+    background-color: #44D58A;
+}
+
+.header .menu li:hover .nutricion li:hover a {
+    color: #000000;
+}
+
+/* FIN MENU PRINCIPAL */
+
+/* INICIO BOTÓN CUENTA */
+
+.header .cuenta button {
+    font-weight: 700;
+    color: #f5fffa;
+    background-color: #44D58A;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .cuenta button:hover{
+    background-color: #44D58A;
+    color: #000000;
+    transform: scale(1.1);
+
+}
+
+/* FIN BOTÓN CUENTA */
+
+/* FIN HEADER */
+
+/* INICIO MAIN */
+
+/* FIN MAIN */
+
+/* INICIO FOOTER */
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer {
+    background-color: #44D58A;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+.footer li a{
+    color: #F5FFFA;
+}
+
+.footer .titulo  {
+    color: #000000;
+}
+.footer li {
+    padding: 3px 3px;
+}
+
+.footer li:hover a {
+    color: #000000;
+}
+
+.redes_sociales_footer {
+    list-style: none;
+}
+
+.redes_sociales_footer li {
+    display: inline-block;
+    padding: 0px 20px;
+    padding-top: 25px;
+}
+
+.inc {
+    list-style: none;
+    padding: 10px;
+    color: #F5FFFA;
+    background-color: #000000
+}
+
+.inc p {
+    padding-top: 2px;
+}
+
+/* FIN FOOTER */
