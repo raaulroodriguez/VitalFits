@@ -34,7 +34,6 @@ function moveToRight() {
         counter = 0;
         operacion = 0;
         slider.style.transform = `translate(-${operacion}%)`;
-        slider.style.transition = "none";
         return;
     } 
     counter++;

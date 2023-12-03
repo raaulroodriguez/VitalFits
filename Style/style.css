@@ -154,7 +154,7 @@ li , a, button {
 }
 
 .busqueda:hover input {
-    width: 280px;
+    width: 300px;
 }
 
 .busqueda:hover i {
@@ -267,6 +267,32 @@ li , a, button {
 }
 
 /* FIN BOTÓN CUENTA */
+
+/* INICIO HEADER RESPONSIVO */
+
+.checkbtn {
+    font-size: 30px;
+    color: #44D58A;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.check {
+    display: none;
+}
+
+@media (max-width: 952px){
+
+}
+
+@media (max-width: 858px){
+    
+}
+
+/* FIN HEADER RESPONSIVO */
 
 /* FIN HEADER */
 
