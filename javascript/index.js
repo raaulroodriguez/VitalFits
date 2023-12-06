@@ -20,10 +20,11 @@ const btnLeft = document.querySelector(".btn-left"),
 btnLeft.addEventListener("click", e => moveToLeft())
 btnRight.addEventListener("click", e => moveToRight())
 
+/*
 setInterval(() => {
     moveToRight()
 }, 4000);
-
+*/
 
 let operacion = 0,
     counter = 0,
@@ -58,8 +59,6 @@ function moveToLeft() {
     
     
 }   
-
-
 
 //  FIN SLIDER  MANUAL //
 
