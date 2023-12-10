@@ -14,8 +14,8 @@
     font-family: 'Comfortaa', sans-serif;
 }
 body {
-    background: url(/img/cientifico.jpg);
-    background-repeat: none;
+    background: url(/img/fondoLogin2.jpg) repeat;
+    background-size: cover;
     color: #000000;
     font-size: 15px;
     height: 100vh;

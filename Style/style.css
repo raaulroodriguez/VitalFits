@@ -414,9 +414,6 @@ main {
 
 .content p {
     color: #E2E8F0;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;  
 }
 
 button {
