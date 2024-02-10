@@ -16,8 +16,8 @@
     </head>
     <body>
         <header>
-            <div class="header_top">
-                <div class="redes_sociales">
+            <div class="header-top">
+                <div class="redes-sociales">
                     <nav>
                         <ul>
                             <!--SOLO SE VERÍAN LOS LOGOS, NO SE VERÍAN LOS NOMBRES-->
@@ -36,8 +36,8 @@
                 <label for="check" class="checkbtn">
                     <i class="fas fa-bars"></i>
                 </label>
-                <div class="logo_lupa">
-                    <a href="index.html"><img class="logo" src="img/logo.jfif" alt="logo"></a>
+                <div class="logo-lupa">
+                    <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
                 </div>
                 <div class="busqueda">
                     <input class="buscar" type="text" placeholder="Buscar...">
@@ -77,6 +77,34 @@
             </div>
         </header>
         <main>
+            <section class="login">
+                <div class="fondo">
+                    <span class="icono-cerrar"><i class="fa-solid fa-xmark"></i></span>
+                    <div class="contenedor-login">
+                        <h2>Iniciar Sesión</h2>
+                        <form action="#">
+                            <div class="contenedor-input">
+                                <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+                                <input type="email" required>
+                                <label for="#">Email</label>
+                            </div>
+                            <div class="contenedor-input">
+                                <span class="icono"><i class="fa-solid fa-lock"></i></span>
+                                <input type="password" required>
+                                <label for="#">Contraseña</label>
+                            </div>
+                            <div class="recordar">
+                                <label for="#"><input type="checkbox">Recordar Sesión</label>
+                                <a href="#">He olvidado la contraseña</a>
+                            </div>
+                            <button type="submit" class="btn">Iniciar Sesión</button>
+                            <div class="registrar">
+                                <p>¿No tienes cuenta? <a href="#" class="registrar-link"> Registrarse</a></p>
+                            </div>
+                        </form>
+                    </div>    
+                </div>
+            </section>
         </main>
         <footer>
             <div class="footer">
@@ -101,12 +129,12 @@
                         <li><a class="titulo">Ayuda</a></li>
                         <li><a href="#">Preguntas Frecuentes</a></li>
                         <li><a href="#">Atención al cliente</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Trabaja Con Nosotros</a></li>
                     </ul>
                 </nav>
                 <nav>
                     <li><a class="titulo">Redes Sociales</a></li>
-                    <ul class="redes_sociales_footer">
+                    <ul class="redes-sociales-footer">
                         <!--SOLO SE VERÍAN LOS LOGOS, NO SE VERÍAN LOS NOMBRES-->
                         <li><a href="https://www.instagram.com/vitalfitseats/"><img class="ig" src="img/ig.png" alt="Instagram"></a></li>
                         <li><a href="https://www.twitter.com/vitalfitseats"><img class="tw" src="img/twitter.png" alt="Twitter"></a></li>
@@ -118,4 +146,5 @@
                 <p>© 2023 VitalFits Eats, Inc</p>
             </div>
         </footer>
+        <script src="javascript/login.js"></script>
     </body>

@@ -2,10 +2,11 @@
 
 /* PALETA DE COLORES 
     BLANCO #F5FFFA
-    VERDE PRINCIPAL #44D58A
+    VERDE PRINCIPAL #22c55e
     NEGRO #000000
     VERDE CLARO #c2fbd7
     VERDE OSCURO #29be72
+    VERDE PRINCIPAL #44D58A
 */
 *{
     box-sizing: border-box;
@@ -15,15 +16,15 @@
 }
 body {
     background: url(/img/fondo4_2.png);
-    background-repeat: none;
+    background-repeat: no-repeat;
     color: #000000;
     font-size: 15px;
-    height: 100vh;
+    height: 100%;
 }
 
 li , a, button {
     font-size: 15px;
-    color: #44D58A;
+    color: #22c55e;
     text-decoration: none;
 }
 
@@ -32,7 +33,7 @@ li , a, button {
 /* INICIO HEADER TOP */
 
 .header_top {
-    background-color: #44D58A;
+    background-color: #22c55e;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +85,7 @@ li , a, button {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border: 2px solid #44D58A;
+    border: 2px solid #22c55e;
     padding: 5px 3%;
     z-index: 1000;
 }
@@ -103,7 +104,7 @@ li , a, button {
 }
 
 .header .logo_lupa img {
-    height: 70px;
+    height: 60px;
     width: auto;
 }
 
@@ -124,7 +125,7 @@ li , a, button {
     padding: 0 15px;
     border-radius: 50px;
     font-size: 15px;
-    border: 1px solid #44D58A;
+    border: 1px solid #22c55e;
     transition: all .7s ease;
 }
 
@@ -138,7 +139,7 @@ li , a, button {
     top: 0;
     width: 50px;
     height: 50px;
-    background: #44D58A;
+    background: #22c55e;
     line-height: 30px;
     border-radius: 50%;
     text-align: center;
@@ -162,7 +163,7 @@ li , a, button {
 }
 
 .lupa:hover {
-    background: #44D58A;
+    background: #22c55e;
 }
 
 /* FIN BARRA DE BÚSQUEDA */
@@ -170,7 +171,7 @@ li , a, button {
 /* INICIO MENU PRINCIPAL */
 
 .header .menu .activo {
-    background-color: #44D58A;
+    background-color: #22c55e;
     cursor: pointer;
 }
 
@@ -194,7 +195,7 @@ li , a, button {
 
 .header .menu a{
     font-size: 700;
-    color: #44D58A;
+    color: #22c55e;
     text-decoration: none;
 }
 
@@ -212,7 +213,7 @@ li , a, button {
 
 .header .menu li:hover .nutricion {
     display: block;
-    background-color: #44D58A;
+    background-color: #22c55e;
     margin-top: 10px;
 }
 .header .menu li:hover .nutricion a {
@@ -220,7 +221,7 @@ li , a, button {
 }
 
 .header .menu .nutricion li:hover {
-    background-color: #44D58A;
+    background-color: #22c55e;
 }
 
 .header .menu li:hover .nutricion li:hover a {
@@ -272,7 +273,7 @@ li , a, button {
 
 .checkbtn {
     font-size: 30px;
-    color: #44D58A;
+    color: #22c55e;
     float: right;
     line-height: 80px;
     margin-right: 20px;
@@ -300,6 +301,14 @@ li , a, button {
 
 main {
     margin-top: 100px;
+}
+
+.svg-1 {
+    margin-top: -9%;
+}
+
+.svg-2 {
+    margin-top: -1%;
 }
 
 /* INICIO SLIDER */
@@ -368,8 +377,9 @@ main {
     position: relative;
     border-radius: 20px;
     padding: 16px;
-    background-color: #44D58A;
     transition: all 0.5s ease;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
 }
 
 .content {
@@ -395,7 +405,6 @@ main {
     right: 25%;
     border-radius: 10px;
     transition: all 0.7s ease;
-    box-shadow: 0px 0px 50px 15px #bef4d7;
 }
 
 .image img {
@@ -417,21 +426,20 @@ main {
 }
 
 button {
-    background-color: #44D58A;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
     color: #FFFFFF;
-    margin-left: 15px;
-    border-radius: 5px;
     padding: 8px 24px;
     transition: 0.2s ease;
     cursor: pointer;
     margin-top: 70px;
     margin-left: 70px;
+    border: 2px solid;
 }
 
 button:hover {
-    background-color: #8aebb8;
+    color: #22c55e;
 }
-
 
 /* FIN SLIDER */
 
@@ -444,10 +452,11 @@ footer {
     position: relative;
     width: 100%;
     top: 100%;
+    margin-top: 30px;
 }
 
 .footer {
-    background-color: #44D58A;
+    background-color: #22c55e;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
