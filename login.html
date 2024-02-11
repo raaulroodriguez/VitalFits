@@ -78,31 +78,87 @@
         </header>
         <main>
             <section class="login">
-                <div class="fondo">
-                    <span class="icono-cerrar"><i class="fa-solid fa-xmark"></i></span>
-                    <div class="contenedor-login">
-                        <h2>Iniciar Sesión</h2>
-                        <form action="#">
-                            <div class="contenedor-input">
-                                <span class="icono"><i class="fa-solid fa-envelope"></i></span>
-                                <input type="email" required>
-                                <label for="#">Email</label>
+                <div class="container">
+                    <div class="signin-signup">
+                        <form action="" class="sign-in-form">
+                            <h2 class="title">Iniciar Sesión</h2>
+                            <div class="input-field">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Correo">
                             </div>
-                            <div class="contenedor-input">
-                                <span class="icono"><i class="fa-solid fa-lock"></i></span>
-                                <input type="password" required>
-                                <label for="#">Contraseña</label>
+                            <div class="input-field">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Contraseña">
                             </div>
-                            <div class="recordar">
-                                <label for="#"><input type="checkbox">Recordar Sesión</label>
-                                <a href="#">He olvidado la contraseña</a>
+                            <input type="submit" value="Iniciar Sesión" class="btn">
+                            <p class="social-text">También puedes hacerlo a través de</p>
+                            <div class="social-media">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="" class="social-icon">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
                             </div>
-                            <button type="submit" class="btn">Iniciar Sesión</button>
-                            <div class="registrar">
-                                <p>¿No tienes cuenta? <a href="#" class="registrar-link"> Registrarse</a></p>
-                            </div>
+                            <p class="account-text">¿Todavía no tienes cuenta? <a href="#" id="sign-up-btn2">Registrarse</a></p>
                         </form>
-                    </div>    
+                        <form action="" class="sign-up-form">
+                            <h2 class="title">Registrarse</h2>
+                            <div class="input-field">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Nombre Completo">
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Correo">
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Contraseña">
+                            </div>
+                            <input type="submit" value="Registrarse" class="btn">
+                            <p class="social-text">También puedes hacerlo a través de</p>
+                            <div class="social-media">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="" class="social-icon">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                            <p class="account-text">¿Ya tienes cuenta? <a href="#" id="sign-in-btn2">Iniciar Sesión</a></p>
+                        </form>
+                    </div>
+                    <div class="panels-container">
+                        <div class="panel left-panel">
+                            <div class="content">
+                                <h3>¿Ya tienes cuenta?</h3>
+                                <p>Inicia sesión ahora y no te pierdas nada, recuerda ¡Comer saludable nunca ha sido tan fácil! 💚</p>
+                                <button class="btn" id="sign-in-btn">Iniciar Sesión</button>
+                            </div>
+                            <img src="img/bol-login.gif" alt="" class="image">
+                        </div>
+                        <div class="panel right-panel">
+                            <div class="content">
+                                <h3>¿Todavía no tienes cuenta?</h3>
+                                <p>No esperes más, hazte con todos los contenidos de VitalFits Eats, rápido y sencillo.</p>
+                                <button class="btn" id="sign-up-btn">Registrarse</button>
+                            </div>
+                            <img src="img/bol-login3.gif" alt="" class="image">
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

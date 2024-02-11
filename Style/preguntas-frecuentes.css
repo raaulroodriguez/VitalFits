@@ -381,13 +381,14 @@ li , a, button {
 
 .contenedor-pregunta {
 	background: transparent;
+    backdrop-filter: blur(30px);
 	padding: 40px;
 	border: 2px solid transparent;
 	border-radius: 10px;
 	overflow: hidden;
 	transition: .3s ease all;
 	cursor: pointer;
-	backdrop-filter: blur(30px);
+
     box-shadow: 0 0 30px rgb(0, 0, 0, .5);
 	color: #F5FFFA;
 }
