@@ -15,7 +15,7 @@
     font-family: 'Comfortaa', sans-serif;
 }
 body {
-    background: url(/img/fondo4_2.png);
+    background: url(../img/fondo4_2.png);
     background-repeat: no-repeat;
     color: #000000;
     font-size: 15px;
@@ -456,6 +456,10 @@ main {
     transform: translateY(5px);
     padding-bottom: 0px;
     outline: 0;
+}
+
+.button:hover a {
+    color: black;
 }
 
 /* FIN SLIDER */
