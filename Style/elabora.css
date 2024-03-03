@@ -2,8 +2,11 @@
 
 /* PALETA DE COLORES 
     BLANCO #F5FFFA
-    VERDE #44D58A
+    VERDE PRINCIPAL #22c55e
     NEGRO #000000
+    VERDE CLARO #c2fbd7
+    VERDE OSCURO #29be72
+    VERDE PRINCIPAL #44D58A
 */
 *{
     box-sizing: border-box;
@@ -12,138 +15,117 @@
     font-family: 'Comfortaa', sans-serif;
 }
 body {
-    background-color: #F5FFFA;
+    background: url(../img/fondo4_2.png);
+    background-repeat: no-repeat;
     color: #000000;
     font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    height: 100%;
 }
 
 li , a, button {
-    font-weight: 500;
     font-size: 15px;
-    color: #44D58A;
+    color: #22c55e;
     text-decoration: none;
 }
 
+
+
+/* INICIO HEADER TOP */
+
 .header_top {
-    background-color: #44D58A;
+    background-color: #22c55e;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-}
-
-.header_princ {
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-    max-width: auto;
-    margin: auto;
-    align-items: center;
-    background-color: #F5FFFA;
-    color: #44D58A;
-    font-size: 15px;
-    border: 2px solid #44D58A;
+    height: 50px;
+    padding: 10px 10%;
     width: 100%;
 }
 
-.redes_sociales {
+/* INICIO REDES SOCIALES */
+
+.header_top .redes_sociales {
     list-style: none;
 }
 
-.redes_sociales li {
-    display: inline-block;
+.header_top .redes_sociales li {
+    display: inline-flex;
     padding: 0px 20px;
 }
 
-.redes_sociales li a{
+.header_top .redes_sociales li a{
     transition: all 0.3s ease 0s;
     color: #000000;
     cursor: pointer;
 }
 
-.redes_sociales li a:hover{
+.header_top .redes_sociales li a:hover{
     color: #F5FFFA;
 }
 
-.ig, .tw, .fb{
+.header_top .redes_sociales, .ig, .tw, .fb{
     height: 20px;
+    width: auto;
 }
-.logo {
-    position: relative;
-    cursor: pointer;
-    height: 80px;
-    left: 80%;
-}
-.header_div{
-    list-style: none;
+
+/* FIN REDES SOCIALES */
+
+/* INICIO SLOGAN */
+
+/* FIN SLOGAN */
+
+/* FIN HEADER TOP */
+
+/* INICIO HEADER */
+
+.header {
+    position: fixed;
+    background-color: #f5fffa;
     display: flex;
-    justify-content: space-around;
-    margin: 5px auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 2px solid #22c55e;
+    padding: 5px 3%;
+    z-index: 1000;
 }
 
-.activo {
-    background-color: #44D58A;
+
+
+.top {
+    top: 0px;
 }
 
-.activo a {
-    color: #000000;
+/* INICIO LOGO */
+
+.header .logo_lupa {
+    cursor: pointer;
+
 }
 
-.header_div li a {
-    display: block;
-    padding: 15px 20px;
-}
-.header_div li{
-    display: inline-block;
-}
-.header_div li:hover{
-    background-color: #44D58A;
-}
-.header_div li:hover a{
-    color: #F5FFFA;
-}
-.nutricion {
-    position: absolute;
-    display: none;
-    list-style: none;
-    width: 200px;
-    background-color: #F5FFFA;
+.header .logo_lupa img {
+    height: 60px;
+    width: auto;
 }
 
-.header_div li:hover .nutricion {
-    display: block;
-    background-color: #44D58A;
-}
-.header_div li:hover .nutricion a {
-    color: #F5FFFA;
-}
+/* FIN LOGO */
 
-.nutricion li:hover {
-    background-color: #44D58A;
-}
+/* INICIO BARRA DE BÚSQUEDA */
 
-.header_div li:hover .nutricion li:hover a {
-    color: #000000;
-}
-
-.buscar {
+.busqueda {
     position: absolute;
     left: 10%;
     padding: 10px;
 }
 
-input {
-    outline: none;
+.buscar {
     box-sizing: border-box;
     height: 30px;
     width: 0;
-    padding: 0 18px;
+    padding: 0 15px;
     border-radius: 50px;
     font-size: 15px;
-    border: 1px solid #44D58A;
+    border: 1px solid #22c55e;
     transition: all .7s ease;
 }
 
@@ -157,8 +139,8 @@ input {
     top: 0;
     width: 50px;
     height: 50px;
-    background: #44D58A;
-    line-height: 50px;
+    background: #22c55e;
+    line-height: 30px;
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
@@ -172,30 +154,325 @@ input {
     transition: all .7s ease;
 }
 
-.buscar:hover input {
-    width: 350px;
+.busqueda:hover input {
+    width: 300px;
 }
 
-.buscar:hover i {
+.busqueda:hover i {
     transform: rotate(-360deg);
 }
 
 .lupa:hover {
-    background: #44D58A;
+    background: #22c55e;
 }
 
-/* FOOTER */
+/* FIN BARRA DE BÚSQUEDA */
+
+/* INICIO MENU PRINCIPAL */
+
+.header .menu .activo {
+    background-color: #22c55e;
+    cursor: pointer;
+}
+
+.header .menu .activo a {
+    color: #000000;
+}
+
+.header .menu .activo:hover {
+    transform: scale(1.1);
+}
+
+.header .menu {
+    list-style: none;
+    margin-left: 100px;
+}
+
+.header .menu li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.header .menu a{
+    font-size: 700;
+    color: #22c55e;
+    text-decoration: none;
+}
+
+.header .menu li:hover a{
+    color: #000000;
+}
+
+.header .menu .nutricion {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: #F5FFFA;
+}
+
+.header .menu li:hover .nutricion {
+    display: block;
+    background-color: #22c55e;
+    margin-top: 10px;
+}
+.header .menu li:hover .nutricion a {
+    color: #F5FFFA;
+}
+
+.header .menu .nutricion li:hover {
+    background-color: #22c55e;
+}
+
+.header .menu li:hover .nutricion li:hover a {
+    color: #000000;
+}
+
+/* FIN MENU PRINCIPAL */
+
+/* INICIO BOTÓN CUENTA */
+
+.header .cuenta {
+    position: relative;
+}
+.header .cuenta li {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: #29be72;
+    cursor: pointer;
+    display: flex;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.header .cuenta li:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.header .cuenta li a {
+    padding-top: 3px;
+}
+
+.header .cuenta .fa-solid {
+    width: 25px;
+    padding-right: 5%;
+    padding-top: 2%;
+    color: #29be72;
+}
+
+/* FIN BOTÓN CUENTA */
+
+/* INICIO HEADER RESPONSIVO */
+
+.checkbtn {
+    font-size: 30px;
+    color: #22c55e;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.check {
+    display: none;
+}
+
+@media (max-width: 952px){
+
+}
+
+@media (max-width: 858px){
+    
+}
+
+/* FIN HEADER RESPONSIVO */
+
+/* FIN HEADER */
+
+/* INICIO MAIN */
+
+.titulo {
+	color: #F5FFFA;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display:flex;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 900px;
+    height: 500px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.button {
+    height: 40px;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0;
+    border: none;
+    transform-origin: center;
+    font-family: "Gochi Hand", cursive;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #494a4b;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #22c55e;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button a {
+    background: #F5FFFA;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #494a4b;
+}
+
+.button:active {
+    transform: translateY(5px);
+    padding-bottom: 0px;
+    outline: 0;
+}
+
+.button:hover a {
+    color: black;
+}
+
+.input-box {
+    position:relative;
+}
+
+.input-box > input {
+    width: 600px;
+    height: 70px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#F5FFFA;
+    
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#f5fffa;
+    
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid #22c55e;
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color: #F5FFFA;
+    letter-spacing: 1.5px;
+}
+
+
+.input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+    color:#22c55e;
+}
+
+form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: #22c55e;
+    color:#F5FFFA;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form > button:hover,
+.links > a:hover {
+    color: black;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+}
+
+/* FIN MAIN */
+
+/* INICIO FOOTER */
 
 footer {
     text-align: center;
     position: relative;
-    bottom: 0;
     width: 100%;
-    margin-top: auto;
+    top: 100%;
+    margin-top: 30px;
 }
 
-.footer_princ {
-    background-color: #44D58A;
+.footer {
+    background-color: #22c55e;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -204,18 +481,18 @@ footer {
     border: 2px solid #000000;
 }
 
-.footer_princ li a{
+.footer li a{
     color: #F5FFFA;
 }
 
-.footer_princ .titulo  {
+.footer .titulo  {
     color: #000000;
 }
-.footer_princ li {
+.footer li {
     padding: 3px 3px;
 }
 
-.footer_princ li:hover a {
+.footer li:hover a {
     color: #000000;
 }
 
@@ -240,6 +517,4 @@ footer {
     padding-top: 2px;
 }
 
-.top {
-    top: 0px;
-}
+/* FIN FOOTER */

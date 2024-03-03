@@ -58,11 +58,9 @@ function moveToLeft() {
 
 //  INICIO SLIDER  AUTOMÁTICO //
 
-/*
 setInterval(() => {
     moveToRight()
-}, 4000);
-*/
+}, 8000);
 
 //  FIN SLIDER  AUTOMÁTICO //
 
