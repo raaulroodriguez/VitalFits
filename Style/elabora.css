@@ -319,7 +319,7 @@ li , a, button {
     padding:20px;
     gap:10px;
     width: 900px;
-    height: 500px;
+    height: 700px;
     background: transparent;
     backdrop-filter: blur(30px);
     align-items: center;
@@ -376,7 +376,7 @@ form {
     position:relative;
 }
 
-.input-box > input {
+.input-box > input, select {
     width: 600px;
     height: 70px;
     padding: 0 10px;
@@ -429,8 +429,16 @@ form {
     transition: .3s;
 }
 
-.input-box > input:focus ~ i {
+.input-box > input:focus ~ i, option{
     color:#22c55e;
+}
+
+select > option {
+    background-color: #F5FFFA;
+    backdrop-filter: blur(30px);
+    font-size: 15px;
+    padding: 10px;
+    height: 30px;
 }
 
 form > button {
@@ -449,6 +457,32 @@ form > button:hover,
 .links > a:hover {
     color: black;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+select {
+    /* Para navegadores basados en WebKit, como Chrome y Safari */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+  /* Estilo adicional para Firefox */
+select::-ms-expand {
+    display: none;
+}
+
 
 @media screen and (max-width:600px) {
     .container {
