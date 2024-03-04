@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+/* PALETA DE COLORES 
+    BLANCO #F5FFFA
+    VERDE PRINCIPAL #22c55e
+    NEGRO #000000
+    VERDE CLARO #c2fbd7
+    VERDE OSCURO #29be72
+    VERDE PRINCIPAL #44D58A
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+body {
+    background: url(../img/fondo4_2.png);
+    background-repeat: repeat;
+    color: #000000;
+    font-size: 15px;
+    height: 100%;
+}
+
+li, a, button {
+    font-size: 15px;
+    color: #22c55e;
+    text-decoration: none;
+}
+
+
+
+/* INICIO HEADER TOP */
+
+.header_top {
+    background-color: #22c55e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px 10%;
+    width: 100%;
+}
+
+/* INICIO REDES SOCIALES */
+
+.header_top .redes_sociales {
+    list-style: none;
+}
+
+.header_top .redes_sociales li {
+    display: inline-flex;
+    padding: 0px 20px;
+}
+
+.header_top .redes_sociales li a{
+    transition: all 0.3s ease 0s;
+    color: #000000;
+    cursor: pointer;
+}
+
+.header_top .redes_sociales li a:hover{
+    color: #F5FFFA;
+}
+
+.header_top .redes_sociales, .ig, .tw, .fb{
+    height: 20px;
+    width: auto;
+}
+
+/* FIN REDES SOCIALES */
+
+/* INICIO SLOGAN */
+
+/* FIN SLOGAN */
+
+/* FIN HEADER TOP */
+
+/* INICIO HEADER */
+
+.header {
+    position: fixed;
+    background-color: #f5fffa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 2px solid #22c55e;
+    padding: 5px 3%;
+    z-index: 1000;
+}
+
+
+
+.top {
+    top: 0px;
+}
+
+/* INICIO LOGO */
+
+.header .logo_lupa {
+    cursor: pointer;
+
+}
+
+.header .logo_lupa img {
+    height: 60px;
+    width: auto;
+}
+
+/* FIN LOGO */
+
+/* INICIO BARRA DE BÚSQUEDA */
+
+.busqueda {
+    position: absolute;
+    left: 10%;
+    padding: 10px;
+}
+
+.buscar {
+    box-sizing: border-box;
+    height: 30px;
+    width: 0;
+    padding: 0 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    border: 1px solid #22c55e;
+    transition: all .7s ease;
+}
+
+::placeholder {
+    color: #000000;
+}
+
+.lupa {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: #22c55e;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.lupa i {
+    font-size: 25px;
+    color: #F5FFFA;
+    line-height: 50px;
+    transition: all .7s ease;
+}
+
+.busqueda:hover input {
+    width: 300px;
+}
+
+.busqueda:hover i {
+    transform: rotate(-360deg);
+}
+
+.lupa:hover {
+    background: #22c55e;
+}
+
+/* FIN BARRA DE BÚSQUEDA */
+
+/* INICIO MENU PRINCIPAL */
+
+.header .menu .activo {
+    background-color: #22c55e;
+    cursor: pointer;
+}
+
+.header .menu .activo a {
+    color: #000000;
+}
+
+.header .menu .activo:hover {
+    transform: scale(1.1);
+}
+
+.header .menu {
+    list-style: none;
+    margin-left: 100px;
+}
+
+.header .menu li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.header .menu a{
+    font-size: 700;
+    color: #22c55e;
+    text-decoration: none;
+}
+
+.header .menu li:hover a{
+    color: #000000;
+}
+
+.header .menu .nutricion {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: #F5FFFA;
+}
+
+.header .menu li:hover .nutricion {
+    display: block;
+    background-color: #22c55e;
+    margin-top: 10px;
+}
+.header .menu li:hover .nutricion a {
+    color: #F5FFFA;
+}
+
+.header .menu .nutricion li:hover {
+    background-color: #22c55e;
+}
+
+.header .menu li:hover .nutricion li:hover a {
+    color: #000000;
+}
+
+/* FIN MENU PRINCIPAL */
+
+/* INICIO BOTÓN CUENTA */
+
+.header .cuenta {
+    position: relative;
+}
+.header .cuenta li {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: #29be72;
+    cursor: pointer;
+    display: flex;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.header .cuenta li:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.header .cuenta li a {
+    padding-top: 3px;
+}
+
+.header .cuenta .fa-solid {
+    width: 25px;
+    padding-right: 5%;
+    padding-top: 2%;
+    color: #29be72;
+}
+
+/* FIN BOTÓN CUENTA */
+
+/* INICIO HEADER RESPONSIVO */
+
+.checkbtn {
+    font-size: 30px;
+    color: #22c55e;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.check {
+    display: none;
+}
+
+@media (max-width: 952px){
+
+}
+
+@media (max-width: 858px){
+    
+}
+
+/* FIN HEADER RESPONSIVO */
+
+/* FIN HEADER */
+
+/* INICIO MAIN */
+
+main {
+    margin-top: 100px;
+}
+
+.svg-1 {
+    margin-top: -9%;
+}
+
+.svg-2 {
+    margin-top: -1%;
+}
+
+/* INICIO SLIDER */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-slider {
+    position: relative;
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-section {
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.btn-left, .btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #F5FFFA;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-left {
+    left: 3px;
+    z-index: 10;
+}
+
+.btn-right {
+    right: 3px;
+    z-index: 10;
+}
+
+.btn-left, .btn-right .fa-solid {
+    color: #000000;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 1150px;
+    position: relative;
+    border-radius: 20px;
+    padding: 16px;
+    transition: all 0.5s ease;
+    background-color: transparent;
+    backdrop-filter: blur(60px);
+}
+
+.content {
+    height: 25%;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.content .desayuno{
+    margin-left: 25%;
+    margin-top: 25px;
+    color: #f5fffa;
+}
+
+.content h3 {
+    margin-left: 25%;
+    margin-top: 15px;
+    color: #f5fffa;
+}
+
+.content p{
+    text-align: justify;
+    margin-left: 25%;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.image1{
+    position: absolute;
+    width: 220px;
+    height: 230px;
+    top: 40px;
+    left: 60px;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+}
+
+.image2{
+    position: absolute;
+    width: 220px;
+    height: 230px;
+    top: 330px;
+    left: 60px;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+}
+
+.image3{
+    position: absolute;
+    width: 220px;
+    height: 230px;
+    top: 605px;
+    left: 60px;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+}
+
+.image4{
+    position: absolute;
+    width: 220px;
+    height: 230px;
+    top: 885px;
+    left: 60px;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+}
+
+.image1 img, .image2 img, .image3 img, .image4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+.content p {
+    color: #E2E8F0;
+}
+
+.button {
+    width: 150px;
+    padding: 0;
+    border: none;
+    transform: rotate(5deg);
+    transform-origin: center;
+    font-family: "Gochi Hand", cursive;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #494a4b;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #22c55e;
+    margin-top: 60px;
+    margin-left: 70px;
+}
+
+.button a {
+    background: #F5FFFA;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #494a4b;
+}
+
+.button:active {
+    transform: translateY(5px);
+    padding-bottom: 0px;
+    outline: 0;
+}
+
+.button:hover a {
+    color: black;
+}
+
+/* FIN SLIDER */
+
+/* FIN MAIN */
+
+/* INICIO FOOTER */
+
+footer {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: 100%;
+    margin-top: 30px;
+}
+
+.footer {
+    background-color: #22c55e;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+.footer li a{
+    color: #F5FFFA;
+}
+
+.footer .titulo  {
+    color: #000000;
+}
+.footer li {
+    padding: 3px 3px;
+}
+
+.footer li:hover a {
+    color: #000000;
+}
+
+.redes_sociales_footer {
+    list-style: none;
+}
+
+.redes_sociales_footer li {
+    display: inline-block;
+    padding: 0px 20px;
+    padding-top: 25px;
+}
+
+.inc {
+    list-style: none;
+    padding: 10px;
+    color: #F5FFFA;
+    background-color: #000000
+}
+
+.inc p {
+    padding-top: 2px;
+}
+
+/* FIN FOOTER */

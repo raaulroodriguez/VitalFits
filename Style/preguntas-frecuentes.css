@@ -333,7 +333,7 @@ li , a, button {
 	color: var(--gris-claro);
 	border: 2px solid transparent;
 	transition: .3s ease all;
-	backdrop-filter: blur(30px);
+	backdrop-filter: blur(60px);
     box-shadow: 0 0 30px rgb(0, 0, 0, .5);
 }
 
@@ -381,7 +381,7 @@ li , a, button {
 
 .contenedor-pregunta {
 	background: transparent;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(60px);
 	padding: 40px;
 	border: 2px solid transparent;
 	border-radius: 10px;

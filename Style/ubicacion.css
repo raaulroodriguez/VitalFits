@@ -380,7 +380,7 @@ main {
     padding: 16px;
     transition: all 0.5s ease;
     background-color: transparent;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(60px);
 }
 
 .content {
